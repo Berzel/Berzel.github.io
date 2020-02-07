@@ -1,7 +1,13 @@
 import AchievementActionTypes from "./AchieventActionTypes"
 
 const initialState = {
-  data: [],
+  data: [
+      {
+          year : 2019,
+          title : "Lorem ipsum",
+          description : "Lorem ipsum dolor sit amet"
+      }
+  ],
   error: null
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 
 import Home from '../pages/Home'
 import About from '../pages/About'
@@ -11,7 +11,7 @@ import PostDetail from '../pages/PostDetail'
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
@@ -21,7 +21,7 @@ const Router = () => {
         <Route path='/portfolio' component={Portfolio} />
         <Route path='/blog/:id' component={PostDetail} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

@@ -14,7 +14,7 @@ const Home = () => {
                 Philanthropist. Ninja.
                             </h2>
               <h3 className="banner__body__sub-title">
-                He is <span id="typed">a ninja</span>
+                He is <span id="typed">a ninja!</span>
               </h3>
               <p className="banner__body__content-body">
                 ...a self driven profesional web developer, who loves working on the web; building high quality websites, liabraries and API's from ground. A risk taker, an entreprenuer who believes that an idea is only as good as its execution, is the founder of ABC, which in 2019 earned him the 'Entreprenuer of the year' award, and he's also the co-founder of XYZ. He believes that `to master the game, one must first know the fundamentals and know them deeply`.
