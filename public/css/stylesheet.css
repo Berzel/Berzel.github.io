@@ -1,0 +1,1571 @@
+@charset "UTF-8";
+:root {
+  box-sizing: border-box;
+  font-size: calc(0.6em + 2vw);
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.row {
+  display: block;
+}
+
+.row::before, .row::after {
+  width: 100%;
+  content: " ";
+  display: table;
+}
+
+.row::after {
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 60em;
+}
+
+.container--fluid {
+  width: 100%;
+}
+
+[class*=col-] {
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 26.5625em) {
+  :root {
+    font-size: calc(0.4em + 2vw);
+  }
+
+  .col-sm-1 {
+    width: 8.3333%;
+  }
+
+  .col-sm-2 {
+    width: 16.6667%;
+  }
+
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  .col-sm-4 {
+    width: 33.3333%;
+  }
+
+  .col-sm-5 {
+    width: 41.6667%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  .col-sm-7 {
+    width: 58.3333%;
+  }
+
+  .col-sm-8 {
+    width: 66.6667%;
+  }
+
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  .col-sm-10 {
+    width: 83.3333%;
+  }
+
+  .col-sm-11 {
+    width: 91.6667%;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 35em) {
+  :root {
+    font-size: calc(0.2em + 2vw);
+  }
+
+  .col-md-1 {
+    width: 8.3333%;
+  }
+
+  .col-md-2 {
+    width: 16.6667%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.3333%;
+  }
+
+  .col-md-5 {
+    width: 41.6667%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.3333%;
+  }
+
+  .col-md-8 {
+    width: 66.6667%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.3333%;
+  }
+
+  .col-md-11 {
+    width: 91.6667%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 55em) {
+  :root {
+    font-size: calc(0.1em + 1vw);
+  }
+
+  .col-lg-1 {
+    width: 8.3333%;
+  }
+
+  .col-lg-2 {
+    width: 16.6667%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.3333%;
+  }
+
+  .col-lg-5 {
+    width: 41.6667%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.3333%;
+  }
+
+  .col-lg-8 {
+    width: 66.6667%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.3333%;
+  }
+
+  .col-lg-11 {
+    width: 91.6667%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+/* Extra Large, from 1440px up */
+@media (min-width: 90em) {
+  .col-xl-1 {
+    width: 8.3333%;
+  }
+
+  .col-xl-2 {
+    width: 16.6667%;
+  }
+
+  .col-xl-3 {
+    width: 25%;
+  }
+
+  .col-xl-4 {
+    width: 33.3333%;
+  }
+
+  .col-xl-5 {
+    width: 41.6667%;
+  }
+
+  .col-xl-6 {
+    width: 50%;
+  }
+
+  .col-xl-7 {
+    width: 58.3333%;
+  }
+
+  .col-xl-8 {
+    width: 66.6667%;
+  }
+
+  .col-xl-9 {
+    width: 75%;
+  }
+
+  .col-xl-10 {
+    width: 83.3333%;
+  }
+
+  .col-xl-11 {
+    width: 91.6667%;
+  }
+
+  .col-xl-12 {
+    width: 100%;
+  }
+}
+/* Extra extra Large, from 2560px up */
+@media (min-width: 160em) {
+  .col-xxl-1 {
+    width: 8.3333%;
+  }
+
+  .col-xxl-2 {
+    width: 16.6667%;
+  }
+
+  .col-xxl-3 {
+    width: 25%;
+  }
+
+  .col-xxl-4 {
+    width: 33.3333%;
+  }
+
+  .col-xxl-5 {
+    width: 41.6667%;
+  }
+
+  .col-xxl-6 {
+    width: 50%;
+  }
+
+  .col-xxl-7 {
+    width: 58.3333%;
+  }
+
+  .col-xxl-8 {
+    width: 66.6667%;
+  }
+
+  .col-xxl-9 {
+    width: 75%;
+  }
+
+  .col-xxl-10 {
+    width: 83.3333%;
+  }
+
+  .col-xxl-11 {
+    width: 91.6667%;
+  }
+
+  .col-xxl-12 {
+    width: 100%;
+  }
+}
+body {
+  --primary: hsl(0, 0%, 25%);
+  --primary-light: hsla(0, 0%, 45%, 0.5);
+  --primary-dark: hsl(0, 0%, 5%);
+  --primary-text: hsl(0, 0%, 95%);
+  --custom-text: hsl(0, 0%, 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: var(--custom-text);
+}
+
+/*
+Main Layout
+
+Provides a respopnsive main layout module for the entire website. On smaller screens the navigation container and the main body content are stacked atop. While on large screens from laptops and above the navigation container will be fixed on the left of the viewport, and the main body content will be on the right. This module provides a higher level layout structure for the entire page(s) on the website. By default the primary color is applied as background
+
+Weight: 1
+
+Markup:
+<div class="main-layout {{ modifier_class }}">
+    <div class="main-layout__nav">
+        Navigation Goes Here
+    </div>
+    <div class="main-layout__content">
+        <div class="main-layout__content__header">
+            Header Goes Here
+        </div>
+        <div class="main-layout__content__body">
+            Every other content goes here
+        </div>
+    </div>
+</div>
+
+.main-layout__nav--dark - A darker navigation. The background color applied is var(--primary-dark)
+.main-layout__nav--lighter - A lighter navigation bar. The background color applied is var(--primary-light)
+
+Styleguide Main Layout
+*/
+.main-layout {
+  position: static;
+}
+
+/* Main layout navigation section */
+.main-layout__nav {
+  z-index: 10;
+  display: flex;
+  padding: 0.5em;
+  position: relative;
+  background-color: var(--primary);
+  box-shadow: -0.1em 0.1em 0.5em var(--primary);
+}
+@media (min-width: 55em) {
+  .main-layout__nav {
+    width: 20em;
+    height: 100vh;
+    position: fixed;
+    padding: 2.5em 2em;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+/* A darker background */
+.main-layout__nav--dark {
+  background-color: var(--primary-dark);
+}
+
+.main-layout__nav--light {
+  background-color: var(--primary--light);
+}
+
+/* Main layout content section */
+.main-layout__content {
+  position: relative;
+}
+@media (min-width: 55em) {
+  .main-layout__content {
+    left: 20em;
+    width: calc(100% - 20em);
+  }
+}
+
+/*
+Navigation bar
+
+The responsive navigation bar. This module only contains the button to toggle the navigation on smaller screens, and the navigation content which can be filled with wahatever content. By default the drawer is empty.
+
+Markup:
+<nav class="nav-bar">
+    <button class="nav-bar__toggle-btn">toggle navigation</button>
+    <div class="nav-bar__content">
+        Nav contents here.
+    </div>
+</nav>
+
+Styleguide Navigation bar
+*/
+.nav-bar {
+  overflow: hidden;
+  margin-left: auto;
+  position: relative;
+  color: var(--primary-text);
+}
+@media (min-width: 55em) {
+  .nav-bar {
+    overflow: auto;
+    margin: 2em 0 0;
+  }
+}
+
+/* Navbar toggle button */
+.nav-bar__toggle-btn {
+  width: 2em;
+  height: 2em;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  background: none;
+  text-indent: -20em;
+  position: relative;
+  white-space: nowrap;
+}
+@media (min-width: 55em) {
+  .nav-bar__toggle-btn {
+    display: none;
+  }
+}
+.nav-bar__toggle-btn::before {
+  top: 0.4em;
+  left: 1em;
+  text-indent: 0;
+  display: block;
+  font-weight: 900;
+  content: "≡";
+  position: absolute;
+  color: var(--primary-text);
+}
+
+/* Navbar content */
+.nav-bar__content {
+  right: 0;
+  top: 1.5em;
+  min-width: 30vw;
+  visibility: hidden;
+  position: absolute;
+  border-radius: 0.2em;
+  transform: translateY(15vh);
+  background-color: var(--primary);
+  transition: transform 0.3s ease-out;
+  transition: visibility 0s ease-out 0.3s;
+  box-shadow: -0.1em 0.1em 0.2em var(--primary);
+}
+@media (min-width: 26.5625em) {
+  .nav-bar__content {
+    min-width: 25vw;
+  }
+}
+@media (min-width: 35em) {
+  .nav-bar__content {
+    min-width: 20vw;
+  }
+}
+@media (min-width: 55em) {
+  .nav-bar__content {
+    overflow: auto;
+    position: static;
+    min-width: initial;
+    border-radius: 0px;
+    visibility: visible;
+    transform: translateY(0);
+    background-color: transparent;
+    box-shadow: 0em 0em 0em var(--primary);
+  }
+}
+
+.nav-bar.is-open {
+  overflow: visible;
+}
+.nav-bar.is-open .nav-bar__content {
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/*
+Mobile menu
+
+A simple mobile menu without a lot of clutter
+
+Markup:
+
+Styleguide Mobile menu
+*/
+.mobile-menu {
+  list-style-type: none;
+}
+@media (min-width: 55em) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu__item__link {
+  display: block;
+  line-height: 1.5;
+  padding: 0.2em 0.5em;
+  color: var(--primary-text);
+}
+
+/*
+Header
+
+The page header contains the logo and the h1 title of the page.
+
+Markup:
+<header class="header">
+    <img class="header__img" src="./images/logo.png" alt="Berzel Best Tumbude">
+    <h1 class="header__title">
+        Berzel Best <br>
+        <span class="header__title__surname">Tumbude</span>
+    </h1>
+</header>
+
+styleguide Header
+*/
+.header {
+  display: flex;
+  color: var(--primary-text);
+}
+
+.header__img {
+  display: none;
+}
+@media (min-width: 55em) {
+  .header__img {
+    width: 2.5em;
+    height: 2.5em;
+    display: block;
+  }
+}
+
+.header__title {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  align-self: center;
+}
+@media (min-width: 55em) {
+  .header__title {
+    line-height: 1.4;
+    font-size: 0.8rem;
+    padding-left: 0.8em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+}
+
+.header__title__surname {
+  display: none;
+}
+@media (min-width: 55em) {
+  .header__title__surname {
+    display: inline;
+  }
+}
+
+/*
+Main menu
+
+Main menu will only be visible from 55em and up
+
+Markup:
+
+
+Styleguide Main menu
+*/
+.main-menu {
+  display: none;
+}
+@media (min-width: 55em) {
+  .main-menu {
+    display: block;
+    font-size: 0.9rem;
+  }
+  .main-menu > * + * {
+    margin-top: 2em;
+  }
+}
+
+/* Only visible on bigger screens */
+@media (min-width: 55em) {
+  .menu {
+    list-style-type: none;
+  }
+
+  .menu__item__link {
+    display: block;
+    padding: 0.4em 0;
+    position: relative;
+    transform: scale(0.9);
+    letter-spacing: 0.03em;
+    transform-origin: 0% 0%;
+    color: var(--custom-text);
+    transition: all 0.3s ease-out;
+  }
+  .menu__item__link:hover {
+    transform: scale(1);
+    color: var(--primary-text);
+  }
+
+  .menu__item__button {
+    display: flex;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.05em;
+    color: var(--custom-text);
+    transition: all 0.2s ease-out;
+    background-color: var(--primary);
+  }
+  .menu__item__button:hover {
+    transform: scale(0.95);
+    color: var(--primary-text);
+  }
+
+  .menu__item__button__icon {
+    width: 3.2em;
+    height: 3.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-light);
+  }
+
+  .menu__item__button__text {
+    flex-grow: 1;
+    display: flex;
+    padding-left: 1em;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: flex-start;
+  }
+
+  .social-menu {
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .social-menu__item {
+    flex-grow: 1;
+    max-width: 25%;
+  }
+  .social-menu__item + .social-menu__item {
+    border-left: 1px solid var(--primary-text);
+  }
+
+  .social-menu__item__link {
+    display: block;
+    padding: 0.3em 0;
+    overflow: hidden;
+    color: var(--custom-text);
+  }
+  .social-menu__item__link > i.zmdi {
+    transition: all 0.3s ease-out;
+  }
+  .social-menu__item__link:hover > i.zmdi {
+    color: var(--primary-text);
+    transform: rotate(360deg) scale(2);
+  }
+
+  .footer {
+    font-size: 0.8rem;
+    color: var(--custom-text);
+  }
+  .footer a {
+    color: var(--primary-text);
+  }
+}
+/*
+Banner
+
+This is a styling module for the banner on the website. It provides styles for the background image, the banner title, subtitle and bobdy. The banner will be placed inside the .main-layout__content__header section of the main layout module.
+
+Markup:
+<div class="banner">
+    <img class="banner__img" src="./images/backgrounds/homebg.jpg" alt="Banner background image">
+    <div class="banner__body">
+        <h2 class="banner__body__title">
+            BT. Developer. Entreprenuer.<br>
+            Philanthropist. Ninja.
+        </h2>
+        <h3 class="banner__body__sub-title">
+            I am ...
+        </h3>
+        <p class="banner__body__content-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique necessitatibus voluptas nobis officiis laborum amet at ab pariatur unde nam? Aperiam quam et nisi vero nobis asperiores sed ratione animi ipsa ipsam, incidunt sequi sapiente earum labore similique magnam mollitia voluptates delectus quisquam esse fugiat ut ad nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi officia aliquam culpa dolorem fuga alias quo ab sequi esse recusandae facilis corporis voluptatum minus unde molestiae consectetur, laudantium eligendi obcaecati. <span class="banner__body__content-body__extra">Nostrum totam doloribus mollitia ipsa rerum quis, dolorem veritatis provident quam distinctio sunt id aliquid, quidem eligendi. Odit dolorem ullam, amet fuga praesentium laudantium? Temporibus delectus excepturi reprehenderit, quos iste, debitis officia autem aliquid incidunt laudantium rerum quidem voluptatem quae quas maiores dolore! Dolore ad provident delectus accusantium repudiandae incidunt libero minus!</span>
+        </p>
+        <div class="banner__body__buttons">
+            If you want buttons put them here
+        </div>
+    </div>
+</div>
+
+Styleguide Banner
+*/
+.banner {
+  font-size: 1rem;
+  padding: 2em 0.5em 2em;
+  background-size: cover;
+  color: var(--primary-text);
+  background-position: center;
+  background-image: linear-gradient(to top, var(--primary-dark), var(--primary-light) 40%, transparent), url("../images/backgrounds/homebg.jpg");
+}
+@media (min-width: 26.5625em) {
+  .banner {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 35em) {
+  .banner {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 55em) {
+  .banner {
+    font-size: 2rem;
+    padding: 5em 2em 2em;
+  }
+}
+
+.banner__body__title {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.banner__body__sub-title {
+  line-height: 1.3;
+  font-size: 0.7em;
+  font-weight: 300;
+}
+
+.banner__body > * + * {
+  margin-top: 1.5em;
+}
+
+.banner__body__content-body {
+  font-size: 0.7em;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+@media (min-width: 35em) {
+  .banner__body__content-body {
+    width: 90%;
+    column-count: 2;
+    column-gap: 2em;
+    font-size: 0.6em;
+  }
+}
+@media (min-width: 55em) {
+  .banner__body__content-body {
+    width: 100%;
+    font-size: 0.5em;
+  }
+}
+
+.banner__body__content-body__extra {
+  display: none;
+}
+@media (min-width: 35em) {
+  .banner__body__content-body__extra {
+    display: inline;
+  }
+}
+
+/*
+Buttons
+
+Honestly i do not know how to describe buttons.
+
+Markup:
+
+
+Styleguide Buttons
+*/
+.btn {
+  background: none;
+  font-size: 0.5rem;
+  padding: 0.8em 1.6em;
+  display: inline-block;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  transition: all 0.2s ease-out;
+  border: 1px solid var(--primary-text);
+}
+@media (min-width: 55em) {
+  .btn {
+    padding: 1em 2em;
+    font-size: 0.7rem;
+    border: 2px solid var(--primary-text);
+  }
+}
+.btn:hover {
+  color: var(--primary);
+  background-color: var(--primary-text);
+}
+.btn + .btn {
+  margin-left: 0.5em;
+}
+.btn.btn--dark {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.btn.scaled {
+  animation: scale 1.2s ease-in-out infinite;
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+/*
+Tiles
+
+Tiles description
+
+Markup:
+
+Styleguide Tiles
+ */
+.tile-row {
+  display: flex;
+  flex-direction: column;
+  margin: -1em 0.5em 2em;
+}
+@media (min-width: 35em) {
+  .tile-row {
+    margin: 0;
+    font-size: 0.7rem;
+    flex-direction: row;
+  }
+}
+@media (min-width: 55em) {
+  .tile-row {
+    line-height: 1.4;
+    font-size: 1.1rem;
+  }
+}
+.tile-row > * + * {
+  margin-top: 1em;
+}
+@media (min-width: 35em) {
+  .tile-row > * + * {
+    margin-top: 0;
+  }
+}
+
+.tile {
+  flex-grow: 1;
+  flex-basis: 0%;
+  background-size: cover;
+  padding: 9em 0.6em 0.6em;
+  color: var(--primary-text);
+  background-position: center;
+  transition: all 0.2s ease-out;
+  background-image: linear-gradient(to top, var(--primary-dark), var(--primary-light) 40%, transparent), url("../images/backgrounds/homebg.jpg");
+}
+.tile > * + * {
+  margin-top: 1em;
+}
+.tile.tile--rounded {
+  border-radius: 0.2em;
+}
+@media (min-width: 35em) {
+  .tile.tile--rounded {
+    border-radius: 0;
+  }
+}
+.tile.tile--raised {
+  box-shadow: -0.1em 0.1em 0.2em var(--primary);
+}
+@media (min-width: 35em) {
+  .tile.tile--raised {
+    box-shadow: initial;
+  }
+}
+
+.tile__title {
+  letter-spacing: 0.06em;
+}
+
+/* 
+ Achievements
+
+ Styles the timeline that shows my achievements
+*/
+.achievements {
+  margin: 2em 1em;
+  max-width: 768px;
+  color: var(--primary-dark);
+}
+@media (min-width: 26.5625em) {
+  .achievements {
+    margin: 2em auto;
+    max-width: 768px;
+    padding: 0 0.25em;
+  }
+}
+@media (min-width: 35em) {
+  .achievements {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 55em) {
+  .achievements {
+    font-size: 1rem;
+  }
+}
+
+.achievements__title {
+  padding: 1.5em 0;
+}
+@media (min-width: 26.5625em) {
+  .achievements__title {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+}
+@media (min-width: 35em) {
+  .achievements__title {
+    padding-bottom: 3em;
+  }
+}
+@media (min-width: 55em) {
+  .achievements__title {
+    padding: 4em;
+  }
+}
+.achievements__title h2 {
+  font-size: 1.5rem;
+}
+.achievements__title > * + * {
+  margin-top: 1em;
+}
+
+.achievement {
+  padding-left: 1em;
+  position: relative;
+  padding-bottom: 3em;
+  border-left: 2px solid var(--primary);
+}
+.achievement::before {
+  top: 0;
+  width: 0.7em;
+  content: "";
+  height: 0.7em;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid white;
+  left: calc(-0.35em - 1.5px);
+  background-color: var(--primary);
+}
+@media (min-width: 26.5625em) {
+  .achievement::before {
+    left: calc(50% - 0.3em);
+  }
+}
+@media (min-width: 26.5625em) {
+  .achievement {
+    border-left: initial;
+    padding-left: initial;
+    padding-bottom: initial;
+    display: flex;
+    position: relative;
+  }
+  .achievement > * {
+    flex: 1 0 50%;
+  }
+  .achievement:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .achievement:nth-child(even) > .achievement__year {
+    display: flex;
+    padding-left: 2em;
+    justify-content: flex-start;
+    border-left: 2px solid var(--primary);
+  }
+  .achievement:nth-child(even) > .achievement__body {
+    text-align: right;
+    padding-right: 2em;
+    border-left: 0px solid transparent;
+  }
+  .achievement:nth-child(odd) > .achievement__body {
+    padding-left: 2em;
+  }
+}
+
+.achievement__year {
+  padding-bottom: 0.5em;
+}
+@media (min-width: 26.5625em) {
+  .achievement__year {
+    display: flex;
+    padding-right: 2em;
+    justify-content: flex-end;
+  }
+}
+
+.achievement__title {
+  font-size: 1.2rem;
+  padding-bottom: 0.5em;
+}
+
+.achievement__body {
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+}
+@media (min-width: 26.5625em) {
+  .achievement__body {
+    padding-bottom: 10em;
+    border-left: 2px solid var(--primary);
+  }
+}
+
+/*
+Skills Pages
+
+Contains styles for the about page
+*/
+.skills {
+  z-index: 10;
+  line-height: 1.4;
+  margin: -1em 0.5em;
+  position: relative;
+  letter-spacing: 0.02em;
+}
+@media (min-width: 35em) {
+  .skills {
+    margin: 2em 0.5em;
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 55em) {
+  .skills {
+    margin: 2em 2em;
+    font-size: 1rem;
+  }
+}
+
+.skill {
+  border-radius: 0.2em;
+  color: var(--primary-text);
+  box-shadow: -0.1em 0.1em 0.5em var(--primary);
+  background-image: radial-gradient(circle at 50% 15%, transparent, var(--primary-dark));
+}
+@media (min-width: 26.5625em) {
+  .skill {
+    background-image: radial-gradient(circle at 50% 25%, transparent, var(--primary-dark));
+  }
+}
+@media (min-width: 35em) {
+  .skill {
+    display: flex;
+    box-shadow: initial;
+    align-items: center;
+    border-radius: initial;
+    background-image: initial;
+    color: var(--primary-dark);
+  }
+}
+.skill:nth-child(odd) {
+  text-align: left;
+  flex-direction: row-reverse;
+}
+.skill > * {
+  flex: 1 1 50%;
+}
+.skill + .skill {
+  margin-top: 1em;
+}
+@media (min-width: 35em) {
+  .skill + .skill {
+    margin-top: 2em;
+  }
+}
+
+.skill__img {
+  z-index: -1;
+  position: relative;
+}
+@media (min-width: 26.5625em) {
+  .skill__img {
+    max-height: 15em;
+    overflow: hidden;
+  }
+}
+@media (min-width: 35em) {
+  .skill__img {
+    max-height: initial;
+    transform: scale(0.9);
+  }
+}
+.skill__img > img {
+  border-top-left-radius: 0.2em;
+  border-top-right-radius: 0.2em;
+}
+@media (min-width: 35em) {
+  .skill__img > img {
+    border-radius: initial;
+  }
+}
+
+@media (min-width: 35em) {
+  .skill:nth-child(even) > .skill__img {
+    padding-right: 2em;
+    transform-origin: center left;
+  }
+
+  .skill:nth-child(odd) > .skill__img {
+    padding-left: 2em;
+    transform-origin: right center;
+  }
+}
+.skill__title {
+  font-size: 1.2rem;
+}
+
+.skill__info {
+  padding: 0.5em;
+}
+.skill__info > * + * {
+  margin-top: 0.5em;
+}
+
+.blog {
+  z-index: 10;
+  margin: -1em 0.5em 1em;
+  position: relative;
+  color: var(--primary-text);
+}
+@media (min-width: 35em) {
+  .blog {
+    display: flex;
+    margin-top: 1em;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 55em) {
+  .blog {
+    margin: 1em;
+  }
+}
+
+.blog__item {
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.2em;
+  border: 1px solid var(--primary-light);
+  box-shadow: -0.1em 0.1em 0.5em var(--primary);
+  background-image: radial-gradient(circle at 50% 30%, transparent, var(--primary-dark));
+}
+.blog__item + .blog__item {
+  margin-top: 1em;
+}
+@media (min-width: 35em) {
+  .blog__item + .blog__item {
+    margin-top: 0em;
+  }
+}
+@media (min-width: 35em) {
+  .blog__item {
+    flex-shrink: 0;
+    border-radius: 0em;
+    flex-basis: calc(50% - 0.25em);
+    box-shadow: 0em 0em 0em var(--primary);
+  }
+  .blog__item:nth-child(even) {
+    margin-left: 0.5em;
+  }
+  .blog__item:nth-child(n+3) {
+    margin-top: 0.8em;
+  }
+}
+
+.blog__item__img {
+  z-index: -1;
+  flex-grow: 1;
+  height: 12em;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 55em) {
+  .blog__item__img {
+    height: 20em;
+  }
+}
+.blog__item__img > img {
+  max-width: 100%;
+  border-top-left-radius: 0.2em;
+  border-top-right-radius: 0.2em;
+}
+@media (min-width: 35em) {
+  .blog__item__img > img {
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
+  }
+}
+
+.blog__item__author {
+  display: flex;
+  padding: 0.5em;
+  margin-top: -0.9em;
+  align-items: center;
+}
+@media (min-width: 35em) {
+  .blog__item__author {
+    margin-top: -0.9em;
+  }
+}
+.blog__item__author > img {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background-color: var(--primary);
+  border: 2px solid var(--primary-light);
+}
+@media (min-width: 35em) {
+  .blog__item__author > img {
+    width: 2em;
+    height: 2em;
+  }
+}
+@media (min-width: 55em) {
+  .blog__item__author > img {
+    width: 2.5em;
+    height: 2.5em;
+  }
+}
+
+.blog__item__author__name {
+  padding: 0 0.4em;
+  font-size: 0.8rem;
+}
+@media (min-width: 35em) {
+  .blog__item__author__name {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 55em) {
+  .blog__item__author__name {
+    font-size: 0.9rem;
+  }
+}
+
+.blog__item__title {
+  font-size: 1.2rem;
+}
+
+.blog__item__body {
+  padding: 0 0.5em 1em;
+}
+.blog__item__body > * + * {
+  margin-top: 1.5em;
+}
+
+.blog__item__link {
+  display: block;
+  color: var(--primary-text);
+  font-weight: 300;
+}
+@media (min-width: 55em) {
+  .blog__item__link {
+    font-size: 1.2em;
+    padding-right: 1.5em;
+  }
+}
+
+.tag {
+  line-height: 1.4;
+  font-size: 0.6em;
+  border-radius: 0.2em;
+  padding: 0.1em 0.5em;
+  display: inline-block;
+  color: var(--primary-text);
+  background-color: var(--primary-dark);
+}
+@media (min-width: 55em) {
+  .tag {
+    font-size: 0.9em;
+  }
+}
+.tag + .tag {
+  margin-left: 0.3em;
+}
+
+.blog__date {
+  font-size: 0.8em;
+}
+
+.blog__post {
+  max-width: 768px;
+  margin: 0.5em auto 3em;
+}
+@media (min-width: 35em) {
+  .blog__post {
+    margin-top: 0.5em;
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 55em) {
+  .blog__post {
+    margin-top: 0em;
+    font-size: 1.1rem;
+  }
+}
+.blog__post a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.blog__post__author {
+  display: flex;
+  margin-top: -1em;
+  align-items: center;
+  color: var(--primary-dark);
+}
+@media (min-width: 35em) {
+  .blog__post__author {
+    margin-top: -2.5em;
+  }
+}
+@media (min-width: 55em) {
+  .blog__post__author {
+    margin-top: -2em;
+  }
+}
+.blog__post__author > img {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  border: 2px solid var(--primary-dark);
+  background-color: var(--primary-dark);
+}
+@media (min-width: 55em) {
+  .blog__post__author > img {
+    width: 3.5em;
+    height: 3.5em;
+  }
+}
+
+.blog__post__title {
+  font-size: 1.6em;
+  line-height: 1.1;
+  margin-top: 1.5em;
+  padding-bottom: 1em;
+  color: var(--primary);
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--primary);
+}
+
+.blog__post__body {
+  line-height: 1.4;
+  margin-top: 3em;
+  color: var(--primary);
+  letter-spacing: 0.02em;
+}
+.blog__post__body * + * {
+  display: block;
+  margin-top: 1em;
+}
+
+@media (min-width: 55em) {
+  .blog__post__body__img {
+    margin: 2em -1em;
+  }
+}
+/* video blog */
+.is-video__overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  font-size: 6em;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop {
+  margin: -1em 0.5em 1em;
+}
+@media (min-width: 35em) {
+  .shop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 55em) {
+  .shop {
+    margin: 1em;
+  }
+}
+
+.shop-item {
+  border-radius: 0.2em;
+  color: var(--primary-text);
+  box-shadow: -0.1em 0.1em 0.5em var(--primary);
+  background-image: radial-gradient(circle at 50% 25%, transparent, var(--primary-dark));
+}
+@media (min-width: 35em) {
+  .shop-item {
+    display: flex;
+    margin-bottom: 1em;
+    flex-direction: column;
+    flex: 0 0 calc(50% - 0.5em);
+    max-width: calc(50% - 0.5em);
+  }
+  .shop-item > img {
+    flex-grow: 1;
+  }
+  .shop-item:nth-child(even) {
+    margin-left: 1em;
+  }
+}
+@media (min-width: 55em) {
+  .shop-item {
+    flex: 0 0 calc(33.3333% - 0.6667em);
+    max-width: calc(33.3333% - 0.6667em);
+  }
+  .shop-item:nth-child(2n) {
+    margin-left: 0;
+  }
+  .shop-item:nth-child(3n+1), .shop-item:nth-child(3n+2) {
+    margin-right: 1em;
+  }
+}
+
+.shop > .shop-item + .shop-item {
+  margin-top: 1em;
+}
+@media (min-width: 35em) {
+  .shop > .shop-item + .shop-item {
+    margin-top: initial;
+  }
+}
+
+.shop-item__img {
+  border-top-left-radius: 0.2em;
+  border-top-right-radius: 0.2em;
+}
+
+.shop-item__detail {
+  display: flex;
+  padding: 0.5em;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+.shop-item__detail > a {
+  flex: 0 0 10%;
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+  align-self: center;
+  color: var(--primary-text);
+}
+
+.shop-item__name {
+  flex: 0 0 80%;
+  overflow: hidden;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.shop-item__owner {
+  opacity: 0.6;
+}
+
+.contact {
+  font-size: 1.2rem;
+}
+
+.contact__social__items {
+  display: flex;
+  padding: 1em 0;
+  list-style-type: none;
+  justify-content: center;
+  background: var(--primary-dark);
+}
+
+.contact__social__item {
+  margin: 0 1em;
+}
+
+
+/* Preloader */
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

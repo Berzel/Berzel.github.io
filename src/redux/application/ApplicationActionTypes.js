@@ -1,0 +1,7 @@
+const ApplicationActionTypes = {
+  APPLICATION_LOADING : 'APPLICATION_LOADING',
+  APPLICATION_LOADED   : 'APPLICATION_LOADED',
+  APPLICATION_LOAD_ERROR : 'APPLICATION_LOAD_ERROR'
+}
+
+export default ApplicationActionTypes
